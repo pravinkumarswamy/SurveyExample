@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="outline.css">
+    
+  </head>
+  <script>
+    function mycounter(){
+        document.getElementById("file").value="20";
+        
+        document.getElementById("answer").innerHTML="1 of 5 answered";
+      // var a=document.getElementByName("rating").value;
+      // console.log(a);
+    }
+  </script>
+  <!-- <script src="outline.js"></script> -->
+  <body>
+    <div class="container">
+      <header>Employee Feedback Form</header>
+   
+<div class="counter" id="myBar"><p id="answer">&nbsp;&nbsp;0 of 5 answered&nbsp;&nbsp;</p>
+  <progress id="file" value="0" max="100"> &nbsp;&nbsp; </progress></div>
+<div class="form-outer">
+        <form action="#">
+    <!-- <div class="page slide-page">
+            <div class="title">Basic Info:</div>
+        <div class="field">
+              <div class="label">Employee Id</div>
+                <input type="text">
+        </div>
+        <div class="field">
+              <div class="label">Cohort Code</div>
+                <input type="text">
+        </div>
+        <div class="field">
+            <div class="label">Coach Full Name</div>
+            <input type="text">
+        </div>
+        <div class="field">
+              <button class="firstNext next">Next</button>
+        </div>
+    </div> -->
+
+    <div class="page slide-page">
+            <div class="title">1. Level of knowledge on start of course of employee.</div>
+
+            <!-- <div class="field">
+                 <div class="label">Email Address</div>
+                <input type="text">
+            </div>
+            <div class="field">
+              <div class="label">Phone Number</div>
+               <input type="Number">
+            </div> -->
+            <div class="field">
+              <div class="rating">
+                
+                <input type="radio" id="star5"  onclick="mycounter()" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                <input type="radio" id="star4"  onclick="mycounter()" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                <input type="radio" id="star3"  onclick="mycounter()" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                <input type="radio" id="star2"  onclick="mycounter()" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                <input type="radio" id="star1"  onclick="mycounter()" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+              </div>
+            </div>
+            <div class="field">
+
+              <button class="firstNext next"><a href="question2.html">Next</a></button>
+            </div>
+            
+    </div>
+
+    
+
+</form>
+</div>
+</div>
+
+<!-- <script src="outline.js"></script> -->
+
+  </body>
+</html>

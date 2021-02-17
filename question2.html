@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="outline.css">
+    
+  </head>
+    <script>
+      
+  //     function myfunction2(){
+  //       const progressText = document.querySelectorAll(".step p");
+  //  const progressCheck = document.querySelectorAll(".step .check");
+  //  const bullet = document.querySelectorAll(".step .bullet");
+  //  let current = 2;
+  //       bullet[current - 1].classList.add("active");
+  //       progressCheck[current - 1].classList.add("active");
+  //       progressText[current - 1].classList.add("active");
+  //       current += 1;
+        // var a=document.getElementByName("rating").value;
+        // console.log(a);
+        function mycounter(){
+          document.getElementById("file").value="40";
+          
+          document.getElementById("answer").innerHTML="2 of 5 answered";
+        
+        }
+
+      </script>
+
+  
+  <body>
+    <div class="container">
+      <header>Employee Feedback Form</header>
+      <div class="counter" id="myBar"><p id="answer">&nbsp;&nbsp;1 of 5 answered&nbsp;&nbsp;</p>
+  <progress id="file" value="20" max="100"> &nbsp;&nbsp; </progress></div>
+<div class="form-outer">
+
+    <form action="#">
+
+        <div class="page">
+            <div class="title">2. Is you trainer able to clear your doubts with suitable examples.</div>
+            
+            <div class="field">
+              <div class="rating">
+                
+                <input type="radio" id="star5" onclick="mycounter()" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                <input type="radio" id="star4" onclick="mycounter()" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                <input type="radio" id="star3" onclick="mycounter()" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                <input type="radio" id="star2" onclick="mycounter()" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                <input type="radio" id="star1" onclick="mycounter()" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+              </div>
+            </div>
+            <div class="field btns">
+                
+               
+              <button class="prev-1 prev"><a href="outline.html">Previous</a></button>
+              <button class="next-1 next"><a href="question3.html">Next</button></a>
+              <!-- <a href="outline.html">click me</a> -->
+            </div>
+            
+    </div>
+
+</form>
+</div>
+</div>
+
+
+
+  </body>
+</html>

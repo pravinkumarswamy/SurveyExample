@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="outline.css">
+    
+  </head>
+  <script>
+  function mycounter(){
+    document.getElementById("file").value="60";
+    
+    document.getElementById("answer").innerHTML="3 of 5 answered";
+  // var a=document.getElementByName("rating").value;
+  // console.log(a);
+}
+</script>
+
+  <!-- <script src="outline.js"></script> -->
+  <body>
+    <div class="container">
+      <header>Employee Feedback Form</header>
+      <div class="counter" id="myBar"><p id="answer">&nbsp;&nbsp;2 of 5 answered&nbsp;&nbsp;</p>
+        <progress id="file" value="40" max="100"> &nbsp;&nbsp; </progress></div>
+
+<div class="form-outer">
+
+    <form action="#">
+
+        <div class="page">
+            <div class="title">3. Do you think trainer has sufficient knowledge to clear the concepts.</div>
+            
+            <div class="field">
+              <div class="rating">
+                
+                <input type="radio" id="star5" onclick="mycounter()" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                <input type="radio" id="star4" onclick="mycounter()" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                <input type="radio" id="star3" onclick="mycounter()" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                <input type="radio" id="star2" onclick="mycounter()" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                <input type="radio" id="star1" onclick="mycounter()" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+              </div>
+            </div>
+            <div class="field btns">
+                
+               
+              <button class="prev-1 prev"><a href="question2.html">Previous</a></button>
+              <button class="next-1 next"><a href="question4.html">Next</button></a>
+              <!-- <a href="outline.html">click me</a> -->
+            </div>
+            
+    </div>
+
+</form>
+</div>
+</div>
+
+<!-- <script??? src="outline.js"></script???> -->
+
+  </body>
+</html>
